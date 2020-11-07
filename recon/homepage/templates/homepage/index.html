@@ -1,0 +1,124 @@
+{% extends 'homepage/layout.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<div class="uk-grid-small uk-position-large uk-position-top-center uk-margin uk-flex-center" uk-grid uk-height-match="target: > div > div > .letter; row: false" uk-scrollspy="target: > div; cls: uk-animation-slide-bottom-medium; delay: 300">
+    <div class="uk-text-center" href="#toggle-modal-r" uk-toggle>
+        <div class="uk-inline-clip uk-transition-toggle" tabindex="0" uk-tooltip="title: About Us; pos: bottom-left">
+            <img class="uk-height-max-medium letter" src="{% static 'homepage/images/Asset 1.png'%}" alt="">
+            <img class="uk-height-max-medium letter uk-transition-fade uk-position-cover" src="{% static 'homepage/images/Asset 1-C.png'%}" alt="">
+        </div>
+    </div>
+    <div class="uk-text-center"  href="#toggle-modal-e" uk-toggle>
+        <div class="uk-inline-clip uk-transition-toggle" tabindex="0" uk-tooltip="title: Our Services; pos: top-left">
+            <img class="uk-height-max-medium letter" src="{% static 'homepage/images/Asset 2.png'%}" alt="">
+            <img class="uk-height-max-medium letter uk-transition-fade uk-position-cover" src="{% static 'homepage/images/Asset 2-C.png'%}" alt="">
+        </div>
+    </div>
+    <div class="uk-text-center" href="#toggle-modal-c" uk-toggle>
+        <div class="uk-inline-clip uk-transition-toggle" tabindex="0" uk-tooltip="title: Our Team; pos: bottom">
+            <img class="uk-height-max-medium letter" src="{% static 'homepage/images/Asset 3.png'%}" alt="">
+            <img class="uk-height-max-medium letter uk-transition-fade uk-position-cover" src="{% static 'homepage/images/Asset 3-C.png'%}" alt="">
+        </div>
+    </div>
+    <div class="uk-text-center" href="#toggle-modal-o" uk-toggle>
+        <div class="uk-inline-clip uk-transition-toggle" tabindex="0" uk-tooltip="title: Contact Us; pos: top">
+            <img class="uk-height-max-medium letter" src="{% static 'homepage/images/Asset 4.png'%}" alt="">
+            <img class="uk-height-max-medium letter uk-transition-fade uk-position-cover" src="{% static 'homepage/images/Asset 4-C.png'%}" alt="">
+        </div>
+    </div>
+    <div class="uk-text-center uk-animation-toggle" href="#toggle-modal-n" tabindex="0">
+        <div class="uk-inline-clip uk-transition-toggle uk-animation-shake" tabindex="0" uk-tooltip="title: Ouch! I'm tickled!; pos: bottom-right">
+            <img class="uk-height-max-medium letter" src="{% static 'homepage/images/Asset 5.png'%}" alt="">
+            <img class="uk-height-max-medium letter uk-transition-fade uk-position-cover" src="{% static 'homepage/images/Asset 5-C.png'%}" alt="">
+        </div>
+    </div>
+</div>
+
+<div id="toggle-modal-r" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h1 class="uk-modal-title">About Us</h1>
+        </div>
+        <div class="uk-modal-body">
+            <h3 class="uk-margin-remove-bottom">re·con·nais·sance</h3>
+            <p class="uk-margin-remove-top uk-text-muted">/rəˈkänəsəns/</p>
+            <p>reconnaissance or scouting is the exploration outside an area occupied by friendly forces to gain information about natural features and other activities in the area.</p>
+        </div>
+    </div>
+</div>
+
+<div id="toggle-modal-e" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h1 class="uk-modal-title">Our Services</h1>
+        </div>
+        <div class="uk-modal-body" uk-overflow-auto>
+            <p class="uk-text-muted">Design | Development | Investment</p>
+            <h3>Design</h3>
+            <p>With well-rounded experience of all aspect of architectural and interior design, we can deliver our design services for various kinds of uses, both residential and commercial projects.</p>
+            <p>Our services cover conceptual design, design development, 3D modeling and BIM management, constrcution drawing, and construction administration.</p>
+            <hr>
+            <h3>Development</h3>
+            <p>For client who is looking for an entire project development and management, we offer such service as well, from land acquisition, financial analysis, and cost estimation, to construction management, real estate marketing, and real estate oepration.</p>
+            <p>Your investment is in the good hand. Let us take all the development and construction risks for you.</p>
+            <hr>
+            <h3>Investment</h3>
+            <p>Apart from being an active designer and developer, we are also looking to invest in various properties and projects, focusing on small- and medium-scale real estate development.</p>
+            <p>Our funding is well-capitalized and we are eager to get our hand dirty as much as you.</p>
+        </div>
+    </div>
+</div>
+
+<div id="toggle-modal-c" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h1 class="uk-modal-title">Our Team</h1>
+        </div>
+        <div class="uk-modal-body" uk-overflow-auto>
+            <p class="uk-text-bold uk-margin-remove-bottom">Watjana Chalongkwamdee</p>
+            <p class="uk-margin-remove-top">Founder & Chief Executive Officer (CEO)</p>
+            <p>Smart, Handsome & Good-looking.</p>
+            <p>Email: <a class="uk-link-muted" href = "mailto: watjana@recon.design">watjana@recon.design</a></p>
+            <hr>
+            <p class="uk-text-bold uk-margin-remove-bottom">Suttipong Kheanman</p>
+            <p class="uk-margin-remove-top">Chief Development Officer (CDO)</p>
+            <p>Passionated architect with hands-on experience in ground-up and expansion airport architectures along with multi-family residential projects in all classes, from budget condominiums to luxury assets. Maintained a great professional relationship with various developers including but not limited to Pruksa Real Estate, AP Thai, and Sansiri.</p>
+            <p>Email: <a class="uk-link-muted" href = "mailto: suttipong@recon.design">suttipong@recon.design</a></p>
+            <hr>
+            <p class="uk-text-bold uk-margin-remove-bottom">Rath Sanguanthai</p>
+            <p class="uk-margin-remove-top">Chief Financial Officer (CFO)</p>
+            <p>Experienced analyst with a demonstrated history of working in the architecture & planning industry with a Master of Science majoring in Real Estate Development from New York Univerity. Coordinated effectively with the multidisciplinary team across entire development process, from acquisition to operation. Excellent knowledge of financial modeling and ARGUS software. </p>
+            <p>Email: <a class="uk-link-muted" href = "mailto: rath@recon.design">rath@recon.design</a></p>
+            <hr>
+            <p class="uk-text-bold uk-margin-remove-bottom">Phutthaphol Simmanee</p>
+            <p class="uk-margin-remove-top">Project Architect</p>
+            <p>Knowledgable architect who dealt with variety of projects along with residential, hospitality, commercial office, and retail stores, both exterior and interior designs. Strong architectural skills with a focus on conceptual design and schematic development.</p>
+            <p>Email: <a class="uk-link-muted" href = "mailto: phutthaphol@recon.design">phutthaphol@recon.design</a></p>
+        </div>
+    </div>
+</div>
+
+<div id="toggle-modal-o" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <div class="uk-modal-header">
+            <h1 class="uk-modal-title">Contact Us</h1>
+        </div>
+        <div class="uk-modal-body">
+            <h3>Head Office</h3>
+            <p class=""><a class="uk-link-muted" href="tel: +66 2 888 8888">+66 88 212 0543</a></p>
+            <p class="uk-margin-remove">21/35 Sulhumvit 29</p>
+            <p class="uk-margin-remove">Klong Toei Nuea, Watthana</p>
+            <p class="uk-margin-remove">Bangkok TH 10110</p>
+            <p class=""><a class="uk-link-muted" href="mailto: office@recon.design">office@recon.design</a></p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
